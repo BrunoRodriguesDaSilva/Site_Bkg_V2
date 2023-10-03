@@ -1,0 +1,341 @@
+$primary-bg-color: #3a3a3a;
+$secondary-bg-color: #d6d6d6;
+$highlight-color: goldenrod;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.destaque__desktop {
+    height: 90vh;
+    width: 100vw;
+    background-color: gray;
+}
+
+
+.footer__desktop {
+    height: 100%;
+    width: 100vw;
+    padding: 0 80px;
+    color: whitesmoke;
+    background-color: rgb(27, 27, 27);
+
+    .contato_e_redes__desktop {
+        display: flex;
+        padding-top: 50px;
+
+        .contato__desktop {
+            height: 100%;
+            width: 40%;
+
+            a {
+                button {
+                    margin-top: 20px;
+                    height: 30px;
+                    width: 180px;
+                    border: none;
+                    border-radius: 20px;
+
+                }
+            }
+
+        }
+
+        .redes_sociais__desktop {
+            height: 100%;
+            width: 60%;
+
+            .titulo__footer__desktop {
+                padding-left: 15%;
+            }
+
+            .lista__icones__desktop {
+                display: flex;
+                justify-content: space-evenly;
+
+                li {
+
+                    img {
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .direitos__desktop {
+        height: 100%;
+        width: 70%;
+        padding: 50px 0 100px 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    .titulo__footer__desktop {
+        font-size: 24px;
+        margin-bottom: 15px;
+        font-weight: lighter;
+    }
+
+    .texto__footer__desktop {
+        font-size: 20px;
+        font-weight: lighter;
+    }
+
+}
+
+
+
+@media screen and (max-width: 425px) {
+
+
+    .cabecalho {
+        height: 80px;
+        width: 100vw;
+        display: flex;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        box-shadow: black 0px 5px 100px -10px;
+        background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.85);
+        align-items: center;
+
+        .logo {
+            height: 50px;
+            width: 100px;
+            margin-left: 20px;
+            background-color: blue;
+        }
+
+        .botao__ativar__lista {
+            position: fixed;
+            display: flex;
+            right: 20px;
+            height: 40px;
+            width: 40px;
+            background-image: url("../../Imagens/menu.svg");
+            background-size: cover;
+            background-color: transparent;
+            border: none;
+
+            .lista__mobile {
+                height: 100vh;
+                min-width: 250px;
+                position: fixed;
+                top: 0;
+                right: -250px;
+                /*botar 0 depois*/
+                border-left: 2px solid black;
+                background-color: rgb(255, 255, 255);
+                list-style: none;
+
+            }
+
+            /*fazer os itens da lista*/
+        }
+
+    }
+
+    .destaque__mobile {
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+
+        .img__mobile {
+            margin: 150px auto 0 auto;
+            height: 450px;
+            width: 300px;
+        }
+
+        .texto__destaque__mobile {
+            margin: 50px 0;
+            font-size: 32px;
+        }
+
+        .botao__destaque__mobile {
+            height: 40px;
+            width: 300px;
+            border: none;
+            font-size: 20px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+    }
+
+    .categorias__mobile {
+        height: 100%;
+        width: 100vw;
+
+        .lista__categoria__mobile {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            overflow: scroll;
+
+            .icone__categoria__mobile {
+                height: 100%;
+                width: 400px;
+                margin: 0 40px;
+
+                a {
+                    text-decoration: none;
+                    color: #3a3a3a;
+
+                    .img__categoria {
+                        height: 150px;
+                        width: 150px;
+                        margin: 10px;
+                        border-radius: 50%;
+                        background-color: #3a3a3a;
+                    }
+
+                    .titulo__icone__mobile {
+                        text-align: center;
+                        padding: 20px 0;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .banner__casual__mobile {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+
+        a {
+            text-decoration: none;
+            color: black;
+            position: relative;
+
+            img {
+                height: 100%;
+                width: 350%;
+            }
+
+            h1 {
+                position: absolute;
+                z-index: 0;
+                top: -350px;
+                font-size: 50px;
+                transform: rotate(270deg);
+
+            }
+        }
+
+    }
+
+    .secao__casual__mobile {
+        height: 100%;
+        width: 100%;
+
+        .lista__casual__mobile {
+            padding: 0 20%;
+
+            .icones__casual__mobile {
+                justify-content: space-evenly;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 70%;
+                margin: auto;
+                padding: 50px 0;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    img {
+                        height: 150px;
+                        width: 150px;
+                        margin-bottom: 25px;
+                        background-color: blue;
+                    }
+                }
+            }
+        }
+    }
+
+    .marcas__mobile {
+        height: 100%;
+        width: 100vw;
+        text-align: center;
+        background-color: beige;
+        
+        .titulo__marcas__mobile {
+            font-size: 40px;
+            margin: 50px 0;
+        }
+
+        .lista__marca__mobile {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            overflow: scroll;
+
+            .icone__marca__mobile {
+                height: 100%;
+                width: 400px;
+                margin: 0 40px;
+
+                a {
+                    text-decoration: none;
+                    color: #3a3a3a;
+
+                    .img__marca {
+                        height: 150px;
+                        width: 150px;
+                        margin: 10px;
+                        border-radius: 50%;
+                        background-color: #3a3a3a;
+                    }
+
+                    .titulo__icone__mobile {
+                        text-align: center;
+                        padding: 20px 0;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .footer__mobile {
+        display: block;
+        width: 100%;
+        padding: 0 40px;
+
+        .contato_e_redes__mobile {
+            display: block;
+
+            .contato__mobile {
+                text-align: center;
+                width: 70%;
+                margin: auto;
+                padding-bottom: 80px;
+
+            }
+
+            .redes_sociais__mobile {
+                margin: auto;
+                width: 100%;
+                padding-bottom: 40px;
+            }
+        }
+
+        .direitos__mobile {
+            width: 100%;
+        }
+
+    }
+}

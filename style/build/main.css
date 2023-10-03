@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.destaque__desktop {
+  height: 90vh;
+  width: 100vw;
+  background-color: gray;
+}
+
+.footer__desktop {
+  height: 100%;
+  width: 100vw;
+  padding: 0 80px;
+  color: whitesmoke;
+  background-color: rgb(27, 27, 27);
+}
+.footer__desktop .contato_e_redes__desktop {
+  display: flex;
+  padding-top: 50px;
+}
+.footer__desktop .contato_e_redes__desktop .contato__desktop {
+  height: 100%;
+  width: 40%;
+}
+.footer__desktop .contato_e_redes__desktop .contato__desktop a button {
+  margin-top: 20px;
+  height: 30px;
+  width: 180px;
+  border: none;
+  border-radius: 20px;
+}
+.footer__desktop .contato_e_redes__desktop .redes_sociais__desktop {
+  height: 100%;
+  width: 60%;
+}
+.footer__desktop .contato_e_redes__desktop .redes_sociais__desktop .titulo__footer__desktop {
+  padding-left: 15%;
+}
+.footer__desktop .contato_e_redes__desktop .redes_sociais__desktop .lista__icones__desktop {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer__desktop .contato_e_redes__desktop .redes_sociais__desktop .lista__icones__desktop li img {
+  height: 40px;
+}
+.footer__desktop .direitos__desktop {
+  height: 100%;
+  width: 70%;
+  padding: 50px 0 100px 0;
+  margin: auto;
+  text-align: center;
+}
+.footer__desktop .titulo__footer__desktop {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: lighter;
+}
+.footer__desktop .texto__footer__desktop {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 425px) {
+  .cabecalho {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: black 0px 5px 100px -10px;
+    background-color: rgba(255, 255, 255, 0.85);
+    align-items: center;
+  }
+  .cabecalho .logo {
+    height: 50px;
+    width: 100px;
+    margin-left: 20px;
+    background-color: blue;
+  }
+  .cabecalho .botao__ativar__lista {
+    position: fixed;
+    display: flex;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    background-image: url("../../Imagens/menu.svg");
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    /*fazer os itens da lista*/
+  }
+  .cabecalho .botao__ativar__lista .lista__mobile {
+    height: 100vh;
+    min-width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    /*botar 0 depois*/
+    border-left: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+  }
+  .destaque__mobile {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .destaque__mobile .img__mobile {
+    margin: 150px auto 0 auto;
+    height: 450px;
+    width: 300px;
+  }
+  .destaque__mobile .texto__destaque__mobile {
+    margin: 50px 0;
+    font-size: 32px;
+  }
+  .destaque__mobile .botao__destaque__mobile {
+    height: 40px;
+    width: 300px;
+    border: none;
+    font-size: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .categorias__mobile {
+    height: 100%;
+    width: 100vw;
+  }
+  .categorias__mobile .lista__categoria__mobile {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+  }
+  .categorias__mobile .lista__categoria__mobile .icone__categoria__mobile {
+    height: 100%;
+    width: 400px;
+    margin: 0 40px;
+  }
+  .categorias__mobile .lista__categoria__mobile .icone__categoria__mobile a {
+    text-decoration: none;
+    color: #3a3a3a;
+  }
+  .categorias__mobile .lista__categoria__mobile .icone__categoria__mobile a .img__categoria {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #3a3a3a;
+  }
+  .categorias__mobile .lista__categoria__mobile .icone__categoria__mobile a .titulo__icone__mobile {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .banner__casual__mobile {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .banner__casual__mobile a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+  }
+  .banner__casual__mobile a img {
+    height: 100%;
+    width: 350%;
+  }
+  .banner__casual__mobile a h1 {
+    position: absolute;
+    z-index: 0;
+    top: -350px;
+    font-size: 50px;
+    transform: rotate(270deg);
+  }
+  .secao__casual__mobile {
+    height: 100%;
+    width: 100%;
+  }
+  .secao__casual__mobile .lista__casual__mobile {
+    padding: 0 20%;
+  }
+  .secao__casual__mobile .lista__casual__mobile .icones__casual__mobile {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 50px 0;
+  }
+  .secao__casual__mobile .lista__casual__mobile .icones__casual__mobile a {
+    text-decoration: none;
+    color: black;
+  }
+  .secao__casual__mobile .lista__casual__mobile .icones__casual__mobile a img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 25px;
+    background-color: blue;
+  }
+  .marcas__mobile {
+    height: 100%;
+    width: 100vw;
+    text-align: center;
+    background-color: beige;
+  }
+  .marcas__mobile .titulo__marcas__mobile {
+    font-size: 40px;
+    margin: 50px 0;
+  }
+  .marcas__mobile .lista__marca__mobile {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+  }
+  .marcas__mobile .lista__marca__mobile .icone__marca__mobile {
+    height: 100%;
+    width: 400px;
+    margin: 0 40px;
+  }
+  .marcas__mobile .lista__marca__mobile .icone__marca__mobile a {
+    text-decoration: none;
+    color: #3a3a3a;
+  }
+  .marcas__mobile .lista__marca__mobile .icone__marca__mobile a .img__marca {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #3a3a3a;
+  }
+  .marcas__mobile .lista__marca__mobile .icone__marca__mobile a .titulo__icone__mobile {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .footer__mobile {
+    display: block;
+    width: 100%;
+    padding: 0 40px;
+  }
+  .footer__mobile .contato_e_redes__mobile {
+    display: block;
+  }
+  .footer__mobile .contato_e_redes__mobile .contato__mobile {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 80px;
+  }
+  .footer__mobile .contato_e_redes__mobile .redes_sociais__mobile {
+    margin: auto;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .footer__mobile .direitos__mobile {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
