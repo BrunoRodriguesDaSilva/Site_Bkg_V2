@@ -310,6 +310,53 @@ $highlight-color: goldenrod;
 
     }
 
+    .ofertas__mobile {
+        .lista__oferta__mobile {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 40px;
+            text-align: center;
+
+            .icone__oferta__desktop {
+                display: none;
+            }
+
+            .icone__oferta__mobile {
+                display: block;
+                margin: 30px 0;
+
+                img {
+                    height: 150px;
+                    width: 150px;
+                    background-color: red;
+                }
+
+                del {
+                    color: #3a3a3a;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+
+                h1 {
+                    font-size: 18px;
+                    margin: 5px 0;
+                }
+
+                button {
+                    height: 30px;
+                    width: 140px;
+                    font-size: 16px;
+                    color: whitesmoke;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: #3a3a3a;
+                }
+            }
+        }
+    }
+
     .footer__mobile {
         display: block;
         width: 100%;

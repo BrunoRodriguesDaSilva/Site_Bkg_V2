@@ -243,6 +243,43 @@
     text-align: center;
     padding: 20px 0;
   }
+  .ofertas__mobile .lista__oferta__mobile {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    text-align: center;
+  }
+  .ofertas__mobile .lista__oferta__mobile .icone__oferta__desktop {
+    display: none;
+  }
+  .ofertas__mobile .lista__oferta__mobile .icone__oferta__mobile {
+    display: block;
+    margin: 30px 0;
+  }
+  .ofertas__mobile .lista__oferta__mobile .icone__oferta__mobile img {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+  }
+  .ofertas__mobile .lista__oferta__mobile .icone__oferta__mobile del {
+    color: #3a3a3a;
+  }
+  .ofertas__mobile .lista__oferta__mobile .icone__oferta__mobile p {
+    font-size: 18px;
+  }
+  .ofertas__mobile .lista__oferta__mobile .icone__oferta__mobile h1 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  .ofertas__mobile .lista__oferta__mobile .icone__oferta__mobile button {
+    height: 30px;
+    width: 140px;
+    font-size: 16px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    background-color: #3a3a3a;
+  }
   .footer__mobile {
     display: block;
     width: 100%;
