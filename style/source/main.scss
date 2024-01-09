@@ -1,0 +1,1059 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-color: transparent;
+    }
+
+    header {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: black 1px -10px 40px 1px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: whitesmoke;
+
+        button {
+            height: 40px;
+            width: 40px;
+            background-color: transparent;
+            border: none;
+
+
+            img {
+                height: 100%;
+            }
+        }
+
+        a {
+            font-size: 28px;
+            margin: 0 150px;
+            text-decoration: none;
+            color: #3a3a3a;
+        }
+    }
+
+    #Banner__Destaque {
+        height: auto;
+        width: 100%;
+        margin: auto;
+        background: rgb(231, 231, 231);
+        background: linear-gradient(90deg, rgba(231, 231, 231, 1) 36%, rgba(204, 203, 203, 1) 100%);
+
+        a {
+            text-decoration: none;
+
+
+            img {
+                max-height: 70vh;
+                max-width: 60vw;
+                padding-top: 20px;
+                height: auto;
+                width: auto;
+                display: flex;
+                margin: auto;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 40px;
+                padding-top: 20px;
+                color: black;
+            }
+        }
+    }
+
+    #Lista__Produtos {
+        margin-bottom: 50px;
+
+        ul {
+            display: flex;
+            max-width: 100vw;
+            list-style: none;
+            text-align: center;
+
+            .mosaico {
+                width: 50%;
+                padding-top: 5%;
+                margin: auto;
+
+                .mosaico__cima {
+                    display: flex;
+                    padding: 2% 0;
+                    align-items: center;
+                    
+                    .img1 {
+                        a {
+                            img {
+                                height: 450px;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+
+                    .img2 {
+                        width: 70%;
+
+                        a {
+                            img {
+                                padding-left: 4%;
+                                height: 450px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .mosaico__baixo {
+                    display: flex;
+                    align-items: center;
+
+                    .img3 {
+                        width: 70%;
+
+                        a {
+                            img {
+                                padding-right: 4%;
+                                height: 450px;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .img4 {
+                        a {
+                            img {
+                                height: 450px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .desktop {
+                    width: 100%;
+
+                    a {
+                        text-align: center;
+                        text-decoration: none;
+
+                        img {
+                            height: 320px;
+                            width: 320px;
+                        }
+
+                        h4 {
+                            position: relative;
+                            margin-top: 10px;
+                            font-size: 30px;
+                            color: whitesmoke;
+                            top: -65px;
+                        }
+                    }
+                }
+            }
+
+
+            .mobile {
+                display: none;
+            }
+        }
+    }
+
+    #Banner__Categoria {
+        height: auto;
+        a {
+            text-decoration: none;
+
+            img {
+                height: 75vh;
+                width: 70%;
+                display: flex;
+                margin: auto;
+                object-fit: cover;
+            }
+
+            h1 {
+                position: absolute;
+                color: whitesmoke;
+                font-size: 82px;
+                top: 2550px;
+                left: 400px;
+            }
+        }
+
+    }
+
+    #Lista__itens {
+        max-width: 80vw;
+        margin: 5% auto;
+
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            list-style: none;
+
+            li {
+                
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-decoration: none;
+                    text-align: center;
+                    color: black;
+                    
+                    img {
+                        height: 250px;
+                        width: 200px;
+                        object-fit: cover;
+                    }
+
+                    h5 {
+                        font-size: 24px;
+                        padding: 2% 0%;
+                    }
+
+                    span {
+                        padding-bottom: 10%;
+                    }
+                }
+            }
+        }
+    }
+
+    #Itens__avulsos {
+
+        ul{
+            display: flex;
+            height: 60vh;
+            width: 70vw;
+            margin: 5% auto;
+            list-style: none;
+
+            .container {
+                display: flex;
+                overflow-x: scroll;
+                
+                .desktop {
+                    display: block;
+                    padding: 50px 60px;
+                    a{
+                        text-align: center;
+                        text-decoration: none;
+    
+                        img{
+                            height: 450px;
+                            width: 300px;
+                        }
+    
+                        h4 {
+                            font-size: 35px;
+                            color: black;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+    
+                .mobile{
+                    display: block;
+                    padding: 50px 60px;
+                    a{
+                        text-align: center;
+                        text-decoration: none;
+    
+                        img{
+                            height: 450px;
+                            width: 300px;
+                        }
+    
+                        h4 {
+                            font-size: 35px;
+                            color: black;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pages_img {
+        height: 150px;
+        width: 150px;
+    }
+
+    #Footer {
+        background-color: rgb(27, 27, 27);
+        color: whitesmoke;
+        text-align: center;
+
+        .contato_e_redes_sociais {
+            display: flex;
+            padding: 100px 0;
+
+                .contato {
+                    width: 50%;
+
+
+                    h1 {
+                        font-size: 28px;
+                        font-weight: lighter;
+                        padding: 0 0 15px 0;
+                    }
+                    
+                    p {
+                        font-size: 20px;
+                        font-weight: lighter;
+                        padding: 0 0 50px 0;
+                    }
+                    
+                    a {
+
+                        button {
+                            height: 50px;
+                            width: 200px;
+                            font-size: 16px;
+                            border-radius: 8px;
+                            color: black;
+                            background-color: whitesmoke;
+                        }
+                    }
+                }
+
+
+                .redes_sociais {
+                    width: 50%;
+                    padding: 0 50px;
+                    
+                    
+                    h1 {
+                        font-size: 28px;
+                        font-weight: lighter;
+                        padding: 0 0 50px 0;
+                    }
+                    
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        
+                        li {
+                            margin: 0 50px;
+                            list-style: none;
+                            
+                            img {
+                                height: 40px;
+                                width: 40px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+        .direitos_do_site {
+            padding-bottom: 100px;
+            text-align: center;
+        
+            h1 {
+                font-size: 28px;
+                padding: 50px 0;
+            }
+        }
+        }
+    }
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        background-color: transparent;
+    }
+
+    header {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: black 1px -10px 40px 1px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: whitesmoke;
+
+        button {
+            height: 40px;
+            width: 40px;
+            background-color: transparent;
+            border: none;
+
+
+            img {
+                height: 100%;
+            }
+        }
+
+        a {
+            font-size: 28px;
+            margin: 0 150px;
+            text-decoration: none;
+            color: #3a3a3a;
+        }
+    }
+
+    #Banner__Destaque {
+        height: auto;
+        width: 100%;
+        margin: auto;
+        background: rgb(231, 231, 231);
+        background: linear-gradient(90deg, rgba(231, 231, 231, 1) 36%, rgba(204, 203, 203, 1) 100%);
+
+        a {
+            text-decoration: none;
+
+
+            img {
+                max-height: 70vh;
+                max-width: 60vw;
+                height: auto;
+                width: auto;
+                display: flex;
+                margin: auto;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 40px;
+                padding-top: 20px;
+                color: black;
+            }
+        }
+    }
+
+    #Lista__Produtos {
+        margin-bottom: 50px;
+
+        ul {
+            display: flex;
+            max-width: 100vw;
+            list-style: none;
+            text-align: center;
+
+            .mosaico {
+                width: auto;
+                padding-top: 5%;
+                margin: auto;
+
+                .mosaico__cima {
+                    display: flex;
+                    padding: 2% 0;
+                    align-items: center;
+
+                    .img1 {
+                        a {
+                            img {
+                                height: 450px;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+
+                    .img2 {
+                        width: 70%;
+
+                        a {
+                            img {
+                                padding-left: 4%;
+                                height: 450px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .mosaico__baixo {
+                    display: flex;
+                    align-items: center;
+
+                    .img3 {
+                        width: 70%;
+
+                        a {
+                            img {
+                                padding-right: 4%;
+                                height: 450px;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .img4 {
+                        a {
+                            img {
+                                height: 450px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .desktop {
+                    width: 100%;
+
+                    a {
+                        text-align: center;
+                        text-decoration: none;
+
+                        img {
+                            height: 320px;
+                            width: 320px;
+                        }
+
+                        h4 {
+                            position: relative;
+                            margin-top: 10px;
+                            color: black;
+                            font-size: 20px;
+                            top: -65px;
+                        }
+                    }
+                }
+            }
+
+
+            .mobile {
+                display: none;
+            }
+        }
+    }
+
+    #Banner__Categoria {
+        height: auto;
+        a {
+            text-decoration: none;
+
+            img {
+                height: 80vh;
+                width: 100%;
+            }
+
+            h1 {
+                position: relative;
+                color: gainsboro;
+                font-size: 82px;
+                top: -650px;
+                left: -360px;
+                transform: rotate(-90deg);
+            }
+        }
+
+    }
+
+    #Lista__itens {
+        max-width: 80vw;
+        margin: 5% auto;
+
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            list-style: none;
+
+            li {
+                padding: 0 5%;
+
+                a {
+                    text-decoration: none;
+                    text-align: center;
+
+                    img {
+                        height: 350px;
+                        width: 100%;
+                    }
+
+                    h5 {
+                        font-size: 40px;
+                        color: black;
+                        padding: 5% 0 15%;
+                    }
+                }
+            }
+        }
+    }
+
+    #Itens__avulsos {
+
+        ul{
+            display: flex;
+            height: 60vh;
+            width: 100vw;
+            list-style: none;
+
+            .container {
+                display: flex;
+                overflow-x: scroll;
+
+                .desktop {
+                    display: block;
+                    padding: 50px 60px;
+                    a{
+                        text-align: center;
+                        text-decoration: none;
+    
+                        img{
+                            height: 450px;
+                            width: 300px;
+                        }
+    
+                        h4 {
+                            font-size: 35px;
+                            color: black;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+    
+                .mobile{
+                    display: block;
+                    padding: 50px 60px;
+                    a{
+                        text-align: center;
+                        text-decoration: none;
+    
+                        img{
+                            height: 450px;
+                            width: 300px;
+                        }
+    
+                        h4 {
+                            font-size: 35px;
+                            color: black;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    body {
+        background-color: transparent;
+    }
+
+    header {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: black 1px -10px 40px 1px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: whitesmoke;
+
+        button {
+            height: 40px;
+            width: 40px;
+            background-color: transparent;
+            border: none;
+
+
+            img {
+                height: 100%;
+            }
+        }
+
+        a {
+            font-size: 28px;
+            margin: 0 150px;
+            text-decoration: none;
+            color: #3a3a3a;
+        }
+    }
+
+    #Banner__Destaque {
+        height: auto;
+        width: 100%;
+        margin: auto;
+        background: rgb(231, 231, 231);
+        background: linear-gradient(90deg, rgba(231, 231, 231, 1) 36%, rgba(204, 203, 203, 1) 100%);
+        margin-bottom: 50px;
+
+        a {
+            text-decoration: none;
+
+
+            img {
+                max-height: 70vh;
+                max-width: 60vw;
+                height: auto;
+                width: auto;
+                min-width: 60vw;
+                display: flex;
+                margin: auto;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 40px;
+                padding-top: 20px;
+                color: black;
+            }
+        }
+    }
+
+    #Lista__Produtos {
+        margin-bottom: 50px;
+
+
+        ul {
+            display: flex;
+            width: 100vw;
+            overflow-x: scroll;
+            list-style: none;
+
+            .mosaico {
+                display: none;
+            }
+
+            .desktop,
+            .mobile {
+                margin: 0 30px;
+                padding: 20px;
+
+                a {
+                    text-align: center;
+                    text-decoration: none;
+
+                    img {
+                        height: 120px;
+                        width: 120px;
+                        border-radius: 100%;
+                    }
+
+                    h4 {
+                        margin-top: 10px;
+                        color: black;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    #Banner__Categoria {
+        height: auto;
+
+        a {
+            text-decoration: none;
+
+            img {
+                height: 80vh;
+                width: 100%;
+            }
+
+            h1 {
+                position: relative;
+                color: gainsboro;
+                font-size: 82px;
+                top: -500px;
+                left: -260px;
+                transform: rotate(-90deg);
+                width: 650px;
+            }
+        }
+    }
+
+    #Lista__itens {
+        max-width: 80vw;
+        margin: 5% auto;
+
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            list-style: none;
+
+            li {
+                padding: 0 5%;
+
+                a {
+                    text-decoration: none;
+                    text-align: center;
+
+                    img {
+                        height: 250px;
+                        width: 100%;
+                    }
+
+                    h5 {
+                        font-size: 30px;
+                        color: black;
+                        padding: 5% 0 15%;
+                    }
+                }
+            }
+        }
+    }
+
+    #Itens__avulsos {
+
+        ul{
+            display: flex;
+            height: 60vh;
+            width: 100vw;
+            list-style: none;
+
+            .container {
+                display: flex;
+                overflow-x: scroll;
+
+                .desktop {
+                    display: block;
+                    padding: 50px 60px;
+                    a{
+                        text-align: center;
+                        text-decoration: none;
+    
+                        img{
+                            height: 450px;
+                            width: 300px;
+                        }
+    
+                        h4 {
+                            font-size: 35px;
+                            color: black;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+    
+                .mobile{
+                    display: block;
+                    padding: 50px 60px;
+                    a{
+                        text-align: center;
+                        text-decoration: none;
+    
+                        img{
+                            height: 450px;
+                            width: 300px;
+                        }
+    
+                        h4 {
+                            font-size: 35px;
+                            color: black;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    header {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: black 1px -10px 40px 1px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: whitesmoke;
+
+        button {
+            height: 40px;
+            width: 40px;
+            background-color: transparent;
+            border: none;
+
+
+            img {
+                height: 100%;
+            }
+        }
+
+        a {
+            font-size: 28px;
+            margin: 0 50px;
+            text-decoration: none;
+            color: #3a3a3a;
+        }
+    }
+
+    #Banner__Destaque {
+        height: auto;
+        margin-bottom: 100px;
+
+        a {
+            text-decoration: none;
+
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
+                height: auto;
+                width: auto;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 40px;
+                padding-top: 20px;
+                color: black;
+            }
+        }
+    }
+
+    #Lista__Produtos {
+        margin: 50px 0;
+
+
+        ul {
+            display: flex;
+            width: 100vw;
+            overflow-x: scroll;
+            list-style: none;
+
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                margin: 0 30px;
+                padding: 20px;
+
+                a {
+                    text-align: center;
+                    text-decoration: none;
+
+                    img {
+                        height: 120px;
+                        width: 120px;
+                        border-radius: 100%;
+                    }
+
+                    h4 {
+                        margin-top: 10px;
+                        color: black;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    #Banner__Categoria {
+        height: auto;
+
+        a {
+            text-decoration: none;
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
+                height: auto;
+                width: auto;
+                z-index: -2;
+            }
+
+            h1 {
+                position: relative;
+                color: gainsboro;
+                font-size: 52px;
+                top: -300px;
+                left: -140px;
+                transform: rotate(-90deg);
+                width: 350px;
+                z-index: 0;
+            }
+        }
+    }
+
+    #Lista__itens {
+        max-width: 80vw;
+        margin: 5% auto;
+
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            list-style: none;
+
+            li {
+                padding: 0 10px;
+
+                a {
+                    text-decoration: none;
+                    text-align: center;
+
+                    img {
+                        height: 150px;
+                        width: 100%;
+                    }
+
+                    h5 {
+                        font-size: 20px;
+                        color: black;
+                        padding: 5% 0 20%;
+                    }
+                }
+            }
+        }
+    }
+
+    #Itens__avulsos {
+
+        ul{
+            display: flex;
+            height: 60vh;
+            width: 100vw;
+            list-style: none;
+            
+            .container {
+                display: flex;
+                overflow-x: scroll;
+
+                .desktop {
+                    display: none;
+                }
+    
+                .mobile{
+                    display: block;
+                    padding: 50px 60px;
+                    a{
+                        text-align: center;
+                        text-decoration: none;
+    
+                        img{
+                            height: 450px;
+                            width: 300px;
+                        }
+    
+                        h4 {
+                            font-size: 35px;
+                            color: black;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
